@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Hello'
         waitUntil() {
-          sh 'exit 0'
+          sh 'return true'
         }
         
       }
