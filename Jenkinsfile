@@ -5,8 +5,7 @@ pipeline {
       steps {
         echo 'Hello'
         waitUntil() {
-          sh 'curl http://www.naver.com'
-          true
+          sh 'echo true'
         }   
       }
     }
