@@ -6,8 +6,8 @@ pipeline {
         echo 'Hello'
         waitUntil() {
           sh 'curl http://www.naver.com'
-        }
-        
+          return true
+        }   
       }
     }
     stage('Stage2') {
