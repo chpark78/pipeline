@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Hello'
         waitUntil() {
-          sh 'curl https://www.google.com'
+          sh 'exit 0'
         }
         
       }
