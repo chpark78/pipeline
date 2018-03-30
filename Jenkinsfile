@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Hello'
         waitUntil() {
-          sh 'wget http://www.naver.com'
+          sh 'curl http://www.naver.com'
         }
         
       }
