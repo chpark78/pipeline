@@ -5,7 +5,8 @@ pipeline {
       steps {
         echo 'Hello'
         waitUntil() {
-          true
+          flag = true
+          flag
         }   
       }
     }
