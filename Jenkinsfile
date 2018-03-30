@@ -3,10 +3,9 @@ pipeline {
   stages {
     stage('Stage1') {
       steps {
-        echo 'Hello'
         waitUntil() {
-          flag = true
-          flag
+          echo 'Hello'
+          return true
         }   
       }
     }
