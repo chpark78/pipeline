@@ -5,7 +5,8 @@ pipeline {
       steps {
         waitUntil() {
           echo 'Hello'
-          return true
+          def result = 0
+          return (result == 0)
         }   
       }
     }
